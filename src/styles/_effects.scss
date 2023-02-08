@@ -1,0 +1,175 @@
+.header__item:focus-visible:not(:hover):not(:active):before {
+    color: #fff;
+    -webkit-transform: scaleX(1.1);
+    -ms-transform: scaleX(1.1);
+    transform: scaleX(1.1);
+}
+
+.header__item:focus-visible {
+    outline: none;
+}
+
+.header__item:hover {
+    color: $hover;
+    transition: color .3s ease-in-out;
+}
+
+.header__item:active {
+    color: $active;
+    transition: color .3s ease-in-out;
+}
+
+.header__svg:focus-visible path {
+    transition: fill .3s ease-in-out;
+    fill: $focus;
+}
+
+.header__svg:focus {
+    outline: none;
+}
+
+.header__svg:hover path {
+    transition: fill .3s ease-in-out;
+    fill: $hover;
+}
+
+.header__svg:active path {
+    transition: fill .3s ease-in-out;
+    fill: $active;
+}
+
+.hero__btn:focus,
+.contacts__btn:focus {
+    outline: none;
+    background-color: $focus;
+}
+
+.hero__btn:hover,
+.contacts__btn:hover {
+    background-color: $hover;
+    outline: 3px solid $active;
+    outline-offset: -3px;
+    transition: outline .3s ease-in-out;
+}
+
+.hero__btn:active,
+.contacts__btn:active {
+    background-color: $active;
+    transition: background-color .3s ease-in-out;
+}
+
+.info__btn:focus {
+    outline: none;
+    background-color: $focus;
+}
+
+.info__btn:hover {
+    background-color: $hover;
+    outline: 3px solid $active;
+    outline-offset: -3px;
+    transition: outline .3s ease-in-out;
+}
+
+.info__btn:active {
+    background-color: $active;
+    transition: background-color .3s ease-in-out;
+}
+
+.project__item-btn:focus {
+    outline: none;
+    background-color: $focus;
+    transition: background-color .3s ease-in-out;
+}
+
+.project__item-btn:hover {
+    background-color: $hover;
+    transition: background-color .2s ease-in-out;
+}
+
+.project__item-btn:active {
+    background-color: $active;
+    border-color: $active;
+    transition-property: background-color, border-color;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+}
+
+.info__input:focus {
+    outline: 1px solid $focus;
+    outline-offset: -1px;
+}
+
+.info__input:hover::placeholder {
+    color: $hover;
+    transition: color .3s ease-in-out;
+}
+
+.info__input:active:not(:focus) {
+    outline: none;
+}
+
+.contacts__input:focus {
+    outline: 1px solid $focus;
+    outline-offset: -1px;
+    transition: outline .3s ease-in-out;
+}
+
+.contacts__input:hover::placeholder {
+    color: $hover;
+    transition: color .3s ease-in-out;
+}
+
+.contacts__back-tel:hover .contacts__back-link {
+    color: $hover;
+    transition: color .3s ease-in-out;
+}
+
+.contacts__back-tel:hover .contacts__svg path {
+    fill: $hover;
+    transition: fill .3s ease-in-out;
+}
+
+.contacts__input:active::placeholder {
+    color: $active;
+    transition: color .3s ease-in-out;
+}
+
+.contacts__back-tel:active .contacts__back-link {
+    color: $active;
+    transition: color .3s ease-in-out;
+}
+
+.contacts__back-tel:active .contacts__svg path {
+    fill: $active;
+    transition: fill .3s ease-in-out;
+}
+
+.contacts__back-tel:focus-visible:not(:hover):not(:active):before {
+    color: #fff;
+    -webkit-transform: scaleX(1.0);
+    -ms-transform: scaleX(1.0);
+    transform: scaleX(1.0);
+}
+
+.contacts__back-tel:focus-visible {
+    outline: none;
+}
+
+.header__search-svg:focus {
+    outline: none;
+}
+
+.header__search-svg:focus path {
+    fill: $focus;
+    transition: fill .3s ease-in-out;
+}
+
+.header__search-svg:hover path {
+    fill: $hover;
+    transition: fill .3s ease-in-out;
+}
+
+.header__search-svg:hover path {
+    fill: $active;
+    transition: fill .3s ease-in-out;
+}

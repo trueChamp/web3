@@ -1,0 +1,138 @@
+.info {
+    background-color: $section-c;
+    padding: 33px 0 71px;
+    margin-bottom: $indent-section;
+}
+
+.info__elems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+}
+
+.info__caption {
+    @include caption-white;
+    margin-bottom: 5px;
+}
+
+.info__text {
+    @include text-white;
+    max-width: 630px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.info__img {
+    margin-bottom: 25px;
+}
+
+.info__right-caption {
+    @include caption-white;
+    font-weight: 400;
+    margin-bottom: 11px;
+    margin-top: -8px;
+}
+
+.info__btn {
+    @include btn;
+}
+
+#form {
+    position: relative;
+}
+
+.info__input {
+    cursor: pointer;
+    width: 75%;
+    @include inputB;
+    margin-right: 26px;
+}
+
+.js-validate-error-label {
+    position: absolute;
+    top: 3px;
+    left: 23.5px;
+    display: inline-block;
+    max-width: 200px;
+    color: #F06666 !important;
+    font-size: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    border: none !important;
+}
+
+.js-validate-error-field {
+    border: none !important;
+    outline: 1px solid #F06666;
+    outline-offset: -1px;
+}
+
+@media (max-width: 1300px) {
+    .info__elems {
+        max-width: 962px;
+        grid-template-columns: repeat(2, minmax(342px, 466px));
+    }
+    .info__input {
+        margin-bottom: 20px;
+    }
+    .info__text {
+        max-width: 463px;
+    }
+    .info__input {
+        width: 73%;
+    }
+    .info {
+        padding: 33px 0 80px;
+        margin-bottom: 71px;
+    }
+}
+
+@media (max-width: 885px) {
+    .info__input {
+        width: 100%;
+    }
+    .info {
+        padding: 33px 0 64px;
+        margin-bottom: 69px;
+    }
+}
+
+@media (max-width: 765px) {
+    .info__elems {
+        grid-template-columns: 1fr;
+    }
+    .info__text {
+        max-width: none;
+    }
+    .info__caption {
+        font-size: 18px;
+    }
+    .info__text {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .info__text {
+        margin-bottom: 23px;
+    }
+    .info__right-caption {
+        font-size: 18px;
+        margin-top: -2px;
+        margin-bottom: 14px;
+    }
+    .info__input {
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
+    .info__btn {
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+    .info {
+        padding: 33px 0 60px;
+        margin-bottom: 51px;
+    }
+    .info__input {
+        margin-right: 0;
+    }
+}

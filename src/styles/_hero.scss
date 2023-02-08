@@ -1,0 +1,228 @@
+.hero {
+    padding-bottom: $indent-section;
+    margin-top: 41px;
+}
+
+.hero__caption {
+    @include caption-black;
+    margin-top: -7px;
+    margin-bottom: 25px;
+}
+
+.hero__grid {
+    display: grid;
+    max-width: 1290px;
+    grid-template-columns: repeat(2, minmax(342px, 630px));
+    grid-template-rows: 350px 257px;
+    gap: 22px 30px;
+    flex-wrap: nowrap;
+}
+
+.hero__item1 {
+    position: relative;
+    grid-row: 1 / span 2;
+    background-image: url(../img/heroIMG1.jpg);
+}
+
+.hero__item2 {
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.hero__item3 {
+    display: grid;
+    max-width: 630px;
+    grid-template-rows: 257px;
+    grid-template-columns: repeat(2, minmax(124px, 1fr));
+    gap: 30px;
+}
+
+.hero__inside1 {
+    background-image: url(../img/heroIMG3.jpg);
+}
+
+.hero__inside2 {
+    background-image: url(../img/heroIMG4.jpg);
+}
+
+.hero__text {
+    @include text-white;
+    color: #fff;
+    margin-top: 405px;
+    margin-bottom: 3px
+}
+
+.hero__cap {
+    @include caption-white;
+    font-size: 36px;
+    max-width: 427px;
+    margin-bottom: 19px;
+    line-height: 38px;
+}
+
+.hero__btn {
+    @include btn;
+}
+
+.hero__card {
+    margin-top: 15px !important;
+    margin-right: 15px !important;
+}
+
+.hero__inside {
+    position: absolute;
+    width: 100%;
+    padding-left: 58px;
+}
+
+@media (max-width: 1300px) {
+    .hero__grid {
+        grid-template-columns: repeat(2, minmax(342px, 466px));
+        grid-template-rows: 407px 186px;
+        gap: 28px 30px;
+    }
+    .hero__item1 {
+        background-image: url(../img/1024/heroIMG1.jpg);
+    }
+    .hero__inside1 {
+        background-image: url(../img/1024/heroIMG3.jpg);
+    }
+    .hero__inside2 {
+        background-image: url(../img/1024/heroIMG4.jpg);
+    }
+    .hero__item3 {
+        display: grid;
+        max-width: 466px;
+        grid-template-rows: 186px;
+        gap: 30px;
+    }
+    .hero {
+        margin-top: 35px;
+    }
+    .hero__caption {
+        margin-top: -3px;
+    }
+    .hero__inside {
+        padding-left: 30px;
+    }
+    .hero__text {
+        margin-top: 427px;
+    }
+    .hero__cap {
+        max-width: 427px;
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 855px) {
+    .hero__grid {
+        grid-template-rows: 290px 133px;
+    }
+    .hero__item1 {
+        background-image: url(../img/768/heroIMG1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .hero__inside1 {
+        background-image: url(../img/768/heroIMG3.jpg);
+        background-repeat: no-repeat;
+    }
+    .hero__inside2 {
+        background-image: url(../img/768/heroIMG4.jpg);
+        background-repeat: no-repeat;
+    }
+    .hero__caption {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .hero__text {
+        margin-top: 225px;
+        margin-bottom: 15px;
+    }
+    .hero__cap {
+        max-width: 239px;
+        line-height: 31px;
+    }
+    .hero__item3 {
+        max-width: 342px;
+    }
+    .hero__card {
+        margin-top: 17px !important;
+        margin-right: 17px !important;
+    }
+    .hero {
+        padding-bottom: 69px;
+    }
+}
+
+@media (max-width: 765px) {
+    .hero__grid {
+        grid-template-columns: 278px;
+        grid-template-rows: 422px 240px 105px;
+        gap: 32px 30px;
+    }
+    .hero__container {
+        max-width: 278px;
+    }
+    .hero__inside {
+        padding-left: 28px;
+    }
+    .hero__cap {
+        font-size: 24px;
+    }
+    .hero__item3 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero__item1 {
+        background-image: url(../img/320/heroIMG1.jpg);
+        background-size: cover;
+        grid-row: auto;
+    }
+    .hero__inside1 {
+        background-image: url(../img/320/heroIMG3.jpg);
+    }
+    .hero__inside2 {
+        background-image: url(../img/320/heroIMG4.jpg);
+    }
+    .hero__caption {
+        float: none;
+        margin-top: 2px;
+    }
+    .hero__item3 {
+        max-width: 279px;
+    }
+    .hero {
+        margin-top: 30px;
+        padding-bottom: 50px;
+    }
+    .hero__card {
+        margin-top: 5px !important;
+        margin-right: 5px !important;
+        font-size: 12px !important;
+        padding: 4px 7px !important;
+    }
+    .hero__text {
+        margin-top: 235px;
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+    .hero__cap {
+        max-width: 169px;
+        line-height: 27px;
+        margin-bottom: 13px;
+    }
+    .hero__btn {
+        font-size: 14px;
+        padding: 11px 23px;
+    }
+    .hero__caption {
+        font-size: 18px;
+        margin-bottom: 13px;
+    }
+}
+
+@media (max-width: 510px) {
+    .hero__container {
+        max-width: none;
+    }
+}

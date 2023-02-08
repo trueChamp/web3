@@ -1,0 +1,129 @@
+@mixin caption-white {
+    color: $c-text1;
+    font-family: 'TFN';
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@mixin caption-black {
+    color: $c-text3;
+    font-family: 'TFN';
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@mixin text-white {
+    color: $c-text2;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@mixin text-black {
+    color: $c-text3;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@mixin btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #FF6E30;
+    padding: 15.5px 22px;
+    border: none;
+}
+
+@mixin btn-vis {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: 3px solid #FF6E30;
+    background-color: transparent;
+    padding: 12px 19px;
+}
+
+@mixin inputL {
+    border: none;
+    background-color: #4A4A4A;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #CACACA;
+}
+
+@mixin inputB {
+    border: none;
+    outline: none;
+    background-color: #4A4A4A;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #CACACA;
+}
+
+@mixin inputL {
+    border: none;
+    background-color: #E9E9E9;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #999999;
+}
+
+@mixin card {
+    background-color: #333333;
+    padding: 6px 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 7px;
+}
+
+@mixin date-p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+    margin-left: 4px;
+}
+
+@mixin date-p2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-left: 4px;
+}
